@@ -57,7 +57,7 @@ async function run() {
   
     const { data: issues } = await octokit.request(`GET /repos/${repository}/issues`, {  
       milestone,
-      state: 'closed',
+      //state: 'closed',
       sort: 'created',
       direction: 'asc'
     });
